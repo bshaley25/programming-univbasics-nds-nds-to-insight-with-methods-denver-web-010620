@@ -27,9 +27,11 @@ end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
+$new_hash = directors_totals($directors_database)
+
+
 def gross_for_director(director_data)
-  new_hash = directors_totals($directors_database)
-  p new_hash[director_data]
+  p $new_hash[director_data]
 end
 
 
